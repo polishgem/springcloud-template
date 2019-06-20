@@ -69,6 +69,22 @@
             <artifactId>spring-boot-starter-tomcat</artifactId>
             <scope>provided</scope>
         </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.github.fartherp/shiro-redisson -->
+        <dependency>
+            <groupId>com.github.fartherp</groupId>
+            <artifactId>shiro-redisson</artifactId>
+        </dependency>
         
     </dependencies>
 

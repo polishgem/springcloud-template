@@ -117,7 +117,37 @@
 				<version>1.4.1</version>
 			</dependency>
 
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger2</artifactId>
+				<version>2.9.2</version>
+			</dependency>
 
+			<!-- 访问地址：http://localhost:端口/swagger-ui.html -->
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger-ui</artifactId>
+				<version>2.9.2</version>
+			</dependency>
+
+			<!-- https://mvnrepository.com/artifact/com.github.fartherp/shiro-redisson -->
+			<dependency>
+				<groupId>com.github.fartherp</groupId>
+				<artifactId>shiro-redisson</artifactId>
+				<version>1.1.1</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.redisson</groupId>
+						<artifactId>redisson</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+
+			<dependency>
+				<groupId>org.redisson</groupId>
+				<artifactId>redisson-spring-boot-starter</artifactId>
+				<version>3.11.0</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -139,12 +169,6 @@
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
 			<version>1.2.58</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.redisson</groupId>
-			<artifactId>redisson-spring-boot-starter</artifactId>
-			<version>3.11.0</version>
 		</dependency>
 
 	</dependencies>
